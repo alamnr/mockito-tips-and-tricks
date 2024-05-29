@@ -1,0 +1,33 @@
+### findAll
+GET http://localhost:8080/api/posts
+
+### findById
+GET http://localhost:8080/api/posts/1
+
+### post
+POST http://localhost:8080/api/posts  
+Content-Type: application/json
+
+{
+    "userId": 999,
+    "title":"created title",
+    "body":"created body"
+}
+
+### put update
+PUT  http://localhost:8080/api/posts/10
+Content-Type: application/json
+
+{
+    "id":10,
+    "userId": 1,
+    "title":"updated title",
+    "body":"updated body"
+}
+
+### findBiId
+GET http://localhost:8080/api/posts/10
+
+### delete
+
+DELETE  http://localhost:8080/api/posts/10
